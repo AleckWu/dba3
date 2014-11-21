@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE interviews SYSTEM "interview.dtd">
+<interviews>
+    <interview rID="rID1" pID="pID1" sID="sID1">
+        <date>2014-11-19</date>
+        <time>14:30</time>
+        <location>BA1700</location>
+
+        <assessment>
+            <answers>
+                <answer qID="qID1">I'm an engineering student</answer>
+                <answer qID="qID2">No difference!!!</answer>
+            </answers>
+
+            <techProficiency>100</techProficiency>
+            <communication>100</communication>
+            <enthusiasm>50</enthusiasm>
+            <!-- <collegiality>10</collegiality> -->
+        </assessment>
+    </interview>
+
+    <interviewer sID="sID1">
+        <forename>John</forename><surname>Smith</surname>
+        <honorific>Mr.</honorific>
+        <title>CEO of Company A</title>
+    </interviewer>
+</interviews>
+
+
+
