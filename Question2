@@ -1,0 +1,28 @@
+
+
+Question 2:
+
+a)
+Look at all LHSs (AB, B, BCD, BCDE, BCE, DF)
+
+B->CEF => BCEF
+(BCE)F->(BCE)DF => BCDEF
+(BCDE)F -> (BCDE)AF => ABCDEF
+
+therefore, B is a key for R
+therefore, anything with B is also a key for R
+
+the only LHS without B is DF:
+DF->C => CDF
+CDF->CDF
+
+therefore DF is NOT a key for R
+
+Therefore, all keys of R are:
+B
+AB, BC, BD, BE, BF
+ABC, ABD, ABE, ABF, BCD, BCE, BCF, BDE, BDF, BEF
+ABCD, ABCE, ABCF, BCDE, BCDF, BDEF
+ABCDE, ABCDF, BCDEF
+ABCDEF
+
