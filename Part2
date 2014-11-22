@@ -26,3 +26,12 @@ ABCD, ABCE, ABCF, BCDE, BCDF, BDEF
 ABCDE, ABCDF, BCDEF
 ABCDEF
 
+
+b)
+Since B is a key for R, we can construct the following set of FDs:
+{B->A, B->C, B->D, B->E, B->F}
+all RHSs are singletons
+if we remove any one of these FD, we lose that specific entailment which cannot be constructed with other FDs in the set
+all LHSs are signletons as well, therefore no need to test whether removing attributes from LHS will result in minimal basis
+
+therefore, {B->A, B->C, B->D, B->E, B->F} is a minimal basis for S
