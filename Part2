@@ -1,3 +1,16 @@
+Question 1:
+
+a)
+A->ACF->ACFH->ACDEFGH->ABCDEFGH => pass
+BCG->BCDG => VIOLATE BCNF
+CF->ACFH->ACDEFGH->ACBDEFGH => pass
+D->BD => VIOLATE BCNF
+H->DEGH->BDEGH => VIOLATE BCNF
+
+therefore, BCG->D, D->B, and H->DEG violate BCNF
+
+b)
+????????
 
 
 Question 2:
