@@ -10,7 +10,63 @@ H->DEGH->BDEGH => VIOLATE BCNF
 therefore, BCG->D, D->B, and H->DEG violate BCNF
 
 b)
-????????
+decompose R using FD D->B:
+    R1 = D+ = BD
+    R2 = R - (R1-D)
+       = ABCDEFGH - B
+       = ACDEFGH
+
+project FD's onto R1 = BD:
+    B+ = B => nothing
+    D+ = BD => D->B; D a superkey of R1
+    BD+ trivial
+    R1 satisfies BCNF with FD: D->B FINAL
+
+project FD's onto R2 = ACDEFGH:
+    A is a superkey
+    C+ = C => nothing
+    D+ = B => nothing
+    E+ = E => nothing
+    F+ = F => nothing
+    G+ = G => nothing
+    H+ = BDEGH => violates BCNF; H->DEG
+    must decompose R2 further
+
+decompose R2 using H->DEG:
+    R3 = H+ = DEGH
+    R4 = R2 - (R3 - H)
+       = ACDEFGH - (DEGH - H)
+       = ACFH
+
+project FD's onto R3 = DEGH:
+    D+ = BD => nothing
+    E+ = E => nothing
+    G+ = G => nothing
+    H+ = DEGH => H->DEG; H a superkey of R3
+    DE+ trivial
+    EG+ trivial
+    DG+ trivial
+    DEG+ trivial
+    no need to further check supersets of H
+    R3 satisfies BCNF with FD: H->DEG FINAL
+
+project FD's onto R4 = ACFH:
+    A->CFH; A is a superkey R4
+    C+ = C => nothing
+    F+ = F => nothing
+    H+ = DEGH => nothing
+    no need to further check supersets of A
+    CF+ = ACFH => CF->AH; CF a superkey of R4
+    FG+ trivial
+    CG+ trivial
+    no need to further check supersets of CF
+    R4 satisfies BCNF with FD: A->CFH, CF->AH FINAL
+
+Final lossless decomposition of R follows:
+    R1=BD;      FD: D->B
+    R3=DEGH;    FD: H->DEG
+    R4=ACFH;    FD: A->CFH, CF->AH
+
 
 
 Question 2:
