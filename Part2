@@ -57,8 +57,8 @@ project FD's onto R4 = ACFH:
     H+ = DEGH => nothing
     no need to further check supersets of A
     CF+ = ACFH => CF->AH; CF a superkey of R4
-    FG+ trivial
-    CG+ trivial
+    FH+ trivial
+    CH+ trivial
     no need to further check supersets of CF
     R4 satisfies BCNF with FD: A->CFH, CF->AH FINAL
 
@@ -66,6 +66,7 @@ Final lossless decomposition of R follows:
     R1=BD;      FD: D->B
     R3=DEGH;    FD: H->DEG
     R4=ACFH;    FD: A->CFH, CF->AH
+
 
 
 
