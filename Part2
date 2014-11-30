@@ -79,29 +79,66 @@ B->CEF => BCEF
 (BCE)F->(BCE)DF => BCDEF
 (BCDE)F -> (BCDE)AF => ABCDEF
 
-therefore, B is a key for R
-therefore, anything with B is also a key for R
+Therefore, B is a key for R, and
+any superset of B cannot be a key
 
 the only LHS without B is DF:
 DF->C => CDF
 CDF->CDF
-
-therefore DF is NOT a key for R
+Therefore DF is NOT a key for R
 
 Therefore, all keys of R are:
 B
-AB, BC, BD, BE, BF
-ABC, ABD, ABE, ABF, BCD, BCE, BCF, BDE, BDF, BEF
-ABCD, ABCE, ABCF, BCDE, BCDF, BDEF
-ABCDE, ABCDF, BCDEF
-ABCDEF
 
 
 b)
-Since B is a key for R, we can construct the following set of FDs:
-{B->A, B->C, B->D, B->E, B->F}
-all RHSs are singletons
-if we remove any one of these FD, we lose that specific entailment which cannot be constructed with other FDs in the set
-all LHSs are signletons as well, therefore no need to test whether removing attributes from LHS will result in minimal basis
+To find the minimal basis for S, we first break all FD's into singleton's:
+1) AB   ->  E
+2) AB   ->  F
+3) B    ->  C
+4) B    ->  E
+5) B    ->  F
+6) BCD  ->  A
+7) BCD  ->  F
+8) BCDE ->  A
+9) BCE  ->  D
+10)DF   ->  C
 
-therefore, {B->A, B->C, B->D, B->E, B->F} is a minimal basis for S
+Let's call the above set S1. Now sequentially eliminate redundancies by 
+checking closure(LHS[i]) without FD[i]
+                FD's ignored    closure(LHS)    result
+1) AB   ->  E   1               ABCE..          discard
+2) AB   ->  F   1, 2            ABCEF..         discard
+3) B    ->  C   1, 2, 3         can't get C     keep
+4) B    ->  E   1, 2, 4         can't get E     keep
+5) B    ->  F   1, 2, 5         BCEDF..         discard
+6) BCD  ->  A   1, 2, 5, 6      BCDEA..         discard
+7) BCD  ->  F   1, 2, 5, 6, 7   can't get F     keep
+8) BCDE ->  A   1, 2, 5, 6, 8   can't get A     keep
+9) BCE  ->  D   1, 2, 5, 6, 9   can't get D     keep
+10)DF   ->  C   1, 2, 5, 6, 10  can't get C     keep
+
+The resultant S2 is now
+1) B    ->  C
+2) B    ->  E
+3) BCD  ->  F
+4) BCDE ->  A
+5) BCE  ->  D
+6) DF   ->  C
+
+Reduce LHS of S2 which have multiple attributes:
+3) BCD  ->  F: B+ = BCEDF   => reduce 3) to B->F
+4) BCDE ->  A: B+ = BCEDA   => reduce 4) to B->A
+5) BCE  ->  D: B+ = BCED    => reduce 5) to B->D
+6) DF   ->  C: D+=D;F+=F    => remain
+
+Thus, we have the following sorted, minimal basis for S:
+1) B    ->  A
+2) B    ->  C
+3) B    ->  D
+4) B    ->  E
+5) B    ->  F
+6) DF   ->  C
+
+c)
+
