@@ -19,7 +19,7 @@
         </assessment>
     </interview>
 
-    <interview rID="rID1" pID="pID1" sID="sID2">
+    <interview rID="rID1" pID="pID2" sID="sID2">
         <date>2014-11-19</date>
         <time>14:30</time>
         <location>BA1700</location>
@@ -34,6 +34,41 @@
             <communication>100</communication>
             <enthusiasm>50</enthusiasm>
             <collegiality>10</collegiality>
+        </assessment>
+    </interview>
+
+    <interview rID="rID2" pID="pID2" sID="sID2">
+        <date>2014-11-19</date>
+        <time>14:30</time>
+        <location>BA1700</location>
+
+        <assessment>
+            <answers>
+                <answer qID="qID1">I'm an engineering student</answer>
+                <answer qID="qID2">No difference!!!</answer>
+            </answers>
+
+            <techProficiency>100</techProficiency>
+            <communication>100</communication>
+            <enthusiasm>75</enthusiasm>
+            <collegiality>75</collegiality>
+        </assessment>
+    </interview>
+
+    <interview rID="rID3" pID="pID1" sID="sID2">
+        <date>2014-11-19</date>
+        <time>14:30</time>
+        <location>BA1700</location>
+
+        <assessment>
+            <answers>
+                <answer qID="qID1">I'm an engineering student</answer>
+                <answer qID="qID2">No difference!!!</answer>
+            </answers>
+
+            <techProficiency>50</techProficiency>
+            <communication>50</communication>
+            <enthusiasm>50</enthusiasm>
         </assessment>
     </interview>
 
