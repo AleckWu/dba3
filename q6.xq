@@ -9,6 +9,4 @@ return
             $s1/@what[.=$skills2/@what] and $s1/@level = $skills2[./@what = $s1/@what]/@level and
             $r1 << $r2 and count($skills1) = count($skills2)
             return 
-                <pair>
-                    {$r1/string(@rID)}{$r2/string(@rID)}
-                </pair>
+                <pair first='{$r1/string(@rID)}' second='{$r2/string(@rID)}'/>

@@ -20,5 +20,15 @@
             <question qID="qID1">You screwed up, what do you tell your customers?</question>
         </questions>
     </posting>
+
+    <posting pID="pID3">
+        <position>Mission Impossible</position>
+        <reqSkill what="Java" level="10" importance="1"/>
+        <reqSkill what="LaTeX" level="10" importance="1"/>
+        <reqSkill what="Matlab" level="10" importance="1"/>
+        <questions>
+            <question qID="qID1">You screwed up, what do you tell your customers?</question>
+        </questions>
+    </posting>
 </postings>
 

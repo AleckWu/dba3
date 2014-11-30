@@ -157,4 +157,57 @@
             <skill what="Python" level="4"/>
         </skills>
     </resume>
+
+
+    <resume rID="rID4">
+        <summary>To find a position to help build my career</summary>
+        <identification>
+            <name>
+                <forename>John</forename><surname>Smith(Copy)</surname>
+                <honorific>Mr.</honorific>
+            </name>
+            <sex>Male</sex>
+            <DOB>1991-11-11</DOB>
+            <citizenship>Canadian</citizenship>
+            <address>81 Garnier Ct., Toronto, ON, M2M 4C8, Canada</address>
+            <telephone>647-668-5669</telephone>
+            <email>aleck.wu@utoronto.ca</email>
+        </identification>
+
+        <education>
+            <degree level="undergraduate">
+                <degreeName>Bachelors of Science</degreeName>
+                <institution>University of Toronto</institution>
+                <major>Engineering Science</major>
+                <honours/>
+                <period>
+                    <startDate>2010-09-01</startDate><endDate>2015-05-01</endDate>
+                </period>
+            </degree>
+        </education>
+
+        <experience>
+            <position where="Rocscience Inc.">
+                <title>Software Engineer Intern</title>
+                <description>Genetic Algorithms</description>
+                <period>
+                    <startDate>2012-05-01</startDate><endDate>2012-08-31</endDate>
+                </period>
+            </position>
+            <position where="Altera Corp.">
+                <title>Software Engineer Intern</title>
+                <description>Place and Route</description>
+                <period>
+                    <startDate>2013-09-01</startDate><endDate>2014-08-31</endDate>
+                </period>
+            </position>
+        </experience>
+
+        <skills>
+            <skill what="Java" level="5"/>
+            <skill what="C" level="3"/>
+            <skill what="Python" level="4"/>
+        </skills>
+    </resume>
+
 </resumes>
