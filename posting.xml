@@ -14,7 +14,7 @@
     <posting pID="pID2">
         <position>Marketing</position>
         <reqSkill what="LaTeX" level="2" importance="3"/>
-        <reqSkill what="Matlab" level="3" importance="1"/>
+        <reqSkill what="Matlab" level="2" importance="1"/>
         <questions>
             <question qID="qID1">You screwed up, what do you tell your customers?</question>
         </questions>
