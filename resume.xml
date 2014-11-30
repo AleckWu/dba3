@@ -99,7 +99,7 @@
         </experience>
 
         <skills>
-            <skill what="Java" level="6"/>
+            <skill what="Java" level="7"/>
             <skill what="C" level="3"/>
             <skill what="Python" level="4"/>
             <skill what="Matlab" level="2"/>
@@ -152,10 +152,9 @@
         </experience>
 
         <skills>
-            <skill what="Java" level="6"/>
+            <skill what="Java" level="5"/>
             <skill what="C" level="3"/>
             <skill what="Python" level="4"/>
-            <skill what="Matlab" level="2"/>
         </skills>
     </resume>
 </resumes>
