@@ -1,3 +1,5 @@
+NOTE: X+ represents the closure of attribute set X
+
 Question 1:
 
 a)
@@ -69,7 +71,6 @@ Final lossless decomposition of R follows:
 
 
 
-
 Question 2:
 
 a)
@@ -78,18 +79,13 @@ Look at all LHSs (AB, B, BCD, BCDE, BCE, DF)
 B->CEF => BCEF
 (BCE)F->(BCE)DF => BCDEF
 (BCDE)F -> (BCDE)AF => ABCDEF
-
-Therefore, B is a key for R, and
-any superset of B cannot be a key
+Therefore, B is a key for R, and any superset of B cannot be a key
 
 the only LHS without B is DF:
 DF->C => CDF
-CDF->CDF
 Therefore DF is NOT a key for R
 
-Therefore, all keys of R are:
-B
-
+Therefore, the only key of R is: B
 
 b)
 To find the minimal basis for S, we first break all FD's into singleton's:
@@ -141,4 +137,23 @@ Thus, we have the following sorted, minimal basis for S:
 6) DF   ->  C
 
 c)
+Following the 3NF synthesis algorithm, we generate a relation per FD 
+AFTER merging the RHS of the minimal basis, which results the following:
+1) B -> ACDEF
+2) DF -> C
 
+Thus the set of relations follow:
+R1(A,B,C,D,E,F)
+R2(C,D,F)
+
+Clearly the attribute set of R2 is contained in R1, thus we can skip R2.
+Finally resulting in a single relation:
+R1(A,B,C,D,E,F)
+
+d)
+To check whether the schema above allows redundancy, we check whether all FD's satisfies
+the BCNF. If all FD's satisfy BCNF i.e. all LHS are superkeys, then no redundancies
+are allowed.
+
+By inspection, it is clear that the FD: DF->C does not satisfy BCNF, since DF+ = DFC, not
+superkey of R1(A,B,C,D,E,F). Thus the above schema does NOT satisfy BCNF and allows redundancy.
