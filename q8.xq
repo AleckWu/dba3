@@ -10,7 +10,7 @@ declare function local:calculateMatch($p as element()?, $r as element()?) as xs:
 
 declare function local:assessmentAvg($ass as element()?) as xs:double {
     let $scoredAss := $ass/*[name() != "answers"]
-    return sum(data($scoredAss)) div count($scoredAss)
+    return sum($scoredAss) div count($scoredAss)
 };
 
 let $interviews := fn:doc("interview.xml")//interview
