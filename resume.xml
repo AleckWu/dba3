@@ -11,8 +11,8 @@
             <sex>Male</sex>
             <DOB>1991-11-11</DOB>
             <citizenship>Canadian</citizenship>
-            <address>81 Garnier Ct., Toronto, ON, M2M 4C8, Canada</address>
-            <telephone>647-668-5669</telephone>
+            <address>randomStreet., Toronto, ON, 12345, Canada</address>
+            <telephone>123456789</telephone>
             <email>aleck.wu@utoronto.ca</email>
         </identification>
 
@@ -46,10 +46,10 @@
         </experience>
 
         <skills>
-            <skill what="Java" level="6"/>
+            <skill what="Java" level="5"/>
             <skill what="C" level="3"/>
             <skill what="Python" level="4"/>
-            <skill what="Matlab" level="2"/>
+            <skill what="MATLAB" level="2"/>
         </skills>
     </resume>
 
@@ -64,8 +64,8 @@
             <sex>Male</sex>
             <DOB>1991-11-11</DOB>
             <citizenship>Canadian</citizenship>
-            <address>81 Garnier Ct., Toronto, ON, M2M 4C8, Canada</address>
-            <telephone>647-668-5669</telephone>
+            <address>randomStreet., Toronto, ON, 12345, Canada</address>
+            <telephone>123456789</telephone>
             <email>aleck.wu@utoronto.ca</email>
         </identification>
 
@@ -99,7 +99,7 @@
         </experience>
 
         <skills>
-            <skill what="Java" level="7"/>
+            <skill what="Java" level="4"/>
             <skill what="C" level="3"/>
             <skill what="Python" level="4"/>
             <skill what="LaTeX" level="2" /> 
@@ -117,8 +117,8 @@
             <sex>Male</sex>
             <DOB>1991-11-11</DOB>
             <citizenship>Canadian</citizenship>
-            <address>81 Garnier Ct., Toronto, ON, M2M 4C8, Canada</address>
-            <telephone>647-668-5669</telephone>
+            <address>randomStreet., Toronto, ON, 12345, Canada</address>
+            <telephone>123456789</telephone>
             <email>aleck.wu@utoronto.ca</email>
         </identification>
 
@@ -169,8 +169,8 @@
             <sex>Male</sex>
             <DOB>1991-11-11</DOB>
             <citizenship>Canadian</citizenship>
-            <address>81 Garnier Ct., Toronto, ON, M2M 4C8, Canada</address>
-            <telephone>647-668-5669</telephone>
+            <address>randomStreet., Toronto, ON, 12345, Canada</address>
+            <telephone>123456789</telephone>
             <email>aleck.wu@utoronto.ca</email>
         </identification>
 

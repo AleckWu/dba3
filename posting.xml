@@ -3,7 +3,7 @@
 <postings>
     <posting pID="pID1">
         <position>Software Engineer</position>
-        <reqSkill what="Java" level="6" importance="5"/>
+        <reqSkill what="Java" level="5" importance="5"/>
         <reqSkill what="C" level="2" importance="1"/>
         <questions>
             <question qID="qID1">Tell me about yourself</question>
@@ -15,7 +15,7 @@
         <position>Marketing</position>
         <reqSkill what="Java" level="1" importance="1"/>
         <reqSkill what="LaTeX" level="2" importance="3"/>
-        <reqSkill what="Matlab" level="2" importance="1"/>
+        <reqSkill what="MATLAB" level="2" importance="1"/>
         <questions>
             <question qID="qID1">You screwed up, what do you tell your customers?</question>
         </questions>
@@ -23,9 +23,9 @@
 
     <posting pID="pID3">
         <position>Mission Impossible</position>
-        <reqSkill what="Java" level="10" importance="1"/>
-        <reqSkill what="LaTeX" level="10" importance="1"/>
-        <reqSkill what="Matlab" level="10" importance="1"/>
+        <reqSkill what="Java" level="5" importance="1"/>
+        <reqSkill what="LaTeX" level="5" importance="1"/>
+        <reqSkill what="MATLAB" level="5" importance="1"/>
         <questions>
             <question qID="qID1">You screwed up, what do you tell your customers?</question>
         </questions>
